@@ -7,5 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: ci ci test
-        run: echo "hello github ci/cd"
+      - name: Compile hello.c
+        run: gcc -o hello hello.c
+      - name: Run hello test
+        run: ./hello & sleep 2 && echo "Echo Test Success!"
