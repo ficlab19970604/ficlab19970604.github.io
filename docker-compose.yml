@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  fic-webserver:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/home/lee/work/
+    container_name: fic_lab_server
