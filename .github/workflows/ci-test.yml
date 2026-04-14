@@ -11,3 +11,8 @@ jobs:
         run: gcc -o hello hello.c
       - name: Run hello test
         run: ./hello & sleep 2 && echo "Echo Test Success!"
+      - name: Compile server.c
+        run: gcc -o server server.c
+      - name: Run server test
+        run: ./server & sleep 2 && echo "Echo server Success!"
+
