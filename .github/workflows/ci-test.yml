@@ -1,0 +1,11 @@
+name: FIC-LAB CI Test
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: ci ci test
+        run: echo "hello github ci/cd"
